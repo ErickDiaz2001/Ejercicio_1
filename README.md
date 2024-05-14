@@ -30,6 +30,8 @@ https://youtube.com/shorts/yCf_ukVzNoY?si=mznmGouvjFMN9USW
 
 Primera parte del video
 
+El SENSOR no detecta presencia y pasaron los 3 segundos la puerta se cierra.
+
 	 	  case PUERTA_ABIERTA:
 	 		  HAL_GPIO_WritePin(GPIOA, LED_1_Pin, GPIO_PIN_SET); // abriendo puerta
 	 		  HAL_GPIO_WritePin(GPIOA, LED_2_Pin, GPIO_PIN_RESET); // motor apagado
@@ -44,6 +46,8 @@ Primera parte del video
 
 
 Segunda parte del video 
+
+El SENSOR detecta presencia y no pasaron los 3 segundos la puerta permanece abierta.
 
 	 	  case PUERTA_ABIERTA:
 	 		  HAL_GPIO_WritePin(GPIOA, LED_1_Pin, GPIO_PIN_SET); // abriendo puerta
