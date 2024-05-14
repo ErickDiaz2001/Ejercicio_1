@@ -130,11 +130,13 @@ int main(void)
 	 		  // cuenta es mayor a 3 segundos y no se detecta presencia
 	 		  if (tim_count > TIEMPO_SIN_PRESENCIA && HAL_GPIO_ReadPin(GPIOA, SENSOR_PRESENCIA_Pin) == 0)
 	 		  {
+				  tim_count = 0;
 	 			  estadoActual = CERRANDO_PUERTA;
 	 		  }
 	 		 // cuenta es menor a 3 segundos y se detecta presencia
 	 		  else if (tim_count <= TIEMPO_SIN_PRESENCIA && HAL_GPIO_ReadPin(GPIOA, SENSOR_PRESENCIA_Pin) == 1)
 	 		  {
+				  tim_count = 0;
 	 			  estadoActual = PUERTA_ABIERTA;
 	 		  }
 	 		  break;
@@ -205,11 +207,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   {
 	  if(estadoActual == PUERTA_ABIERTA)
 	  {
+		  HAL_GPIO_TogglePin(GPIOC, LED_VERDE_Pin);
 		  tim_count ++;// incrementamos cada 1 segundo el tim_count
-	  }
-	  else
-	  {
-		  tim_count = 0;
 	  }
   }
 }
