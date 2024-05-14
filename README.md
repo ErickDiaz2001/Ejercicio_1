@@ -6,18 +6,15 @@ Configuracion
 
 El system clock del microcontrolador se configuro a 72Mhz.
 
-![image](https://github.com/ErickDiaz2001/Ejercicio_2/assets/169405943/86a437f6-b362-41f3-80eb-994765631e8e)
-
 Se utilizara el timer 2, para obtener una interrupción cada 1s se configuro un prescaler a 7200-1 y el counter period a 10000. Ademas de habilitar la interrupcion. 
 
-![image](https://github.com/ErickDiaz2001/Ejercicio_1/assets/169405943/a55f0c98-d9c3-43a9-8877-f95c035ea704)
-
+![image](https://github.com/ErickDiaz2001/Ejercicio_1/assets/169405943/00dc879d-16f7-42ea-97c6-c1b08e5214e5)
 
 Metodología
 
 Se implementaran maquinas de estados para la resolucion de este ejercicio.
 
-![image](https://github.com/ErickDiaz2001/Ejercicio_1/assets/169405943/536ee372-17e5-47d6-a184-fcd4f89289c3)
+![image](https://github.com/ErickDiaz2001/Ejercicio_1/assets/169405943/fbb3917e-033d-4277-9e26-9bc6a3dfb106)
 
 El microcontrolador monitorea la salida del sensor y controla el encendido de LED_1 y LED_2 que indica si el motor esta abriendo o cerrando la puerta y LED_2 que indica el estado del motor apagado o encendido. 
 
