@@ -39,6 +39,16 @@ Primera parte del video
 				  tim_count = 0;
 	 			  estadoActual = CERRANDO_PUERTA;
 	 		  }
+	 		 ...
+	 		  break;
+
+
+Segunda parte del video 
+
+	 	  case PUERTA_ABIERTA:
+	 		  HAL_GPIO_WritePin(GPIOA, LED_1_Pin, GPIO_PIN_SET); // abriendo puerta
+	 		  HAL_GPIO_WritePin(GPIOA, LED_2_Pin, GPIO_PIN_RESET); // motor apagado
+	 		  ...
 	 		 // cuenta es menor a 3 segundos y se detecta presencia
 	 		  else if (tim_count <= TIEMPO_SIN_PRESENCIA && HAL_GPIO_ReadPin(GPIOA, SENSOR_PRESENCIA_Pin) == 1)
 	 		  {
@@ -46,20 +56,6 @@ Primera parte del video
 	 			  estadoActual = PUERTA_ABIERTA;
 	 		  }
 	 		  break;
-
-
-Segunda parte del video 
-
-  case PUERTA_ABIERTA:
-	 		  HAL_GPIO_WritePin(GPIOA, LED_1_Pin, GPIO_PIN_SET); // abriendo puerta
-	 		  HAL_GPIO_WritePin(GPIOA, LED_2_Pin, GPIO_PIN_RESET); // motor apagado
-	 		  ...
-	 		 // cuenta es menor a 3 segundos y se detecta presencia
-	 		  else if (tim_count <= TIEMPO_SIN_PRESENCIA && HAL_GPIO_ReadPin(GPIOA, SENSOR_PRESENCIA_Pin) == 1)
-	 		  {
-	 			  tim_count = 0;
-	 			  estadoActual = PUERTA_ABIERTA;
-	 		  }
 
 Conclusiones
 
