@@ -31,14 +31,14 @@ https://youtube.com/shorts/yCf_ukVzNoY?si=mznmGouvjFMN9USW
 Primera parte del video
 
 case PUERTA_ABIERTA:
-	 		  HAL_GPIO_WritePin(GPIOA, LED_1_Pin, GPIO_PIN_SET); // abriendo puerta
-	 		  HAL_GPIO_WritePin(GPIOA, LED_2_Pin, GPIO_PIN_RESET); // motor apagado
-	 		  // cuenta es mayor a 3 segundos y no se detecta presencia
-	 		  if (tim_count > TIEMPO_SIN_PRESENCIA && HAL_GPIO_ReadPin(GPIOA, SENSOR_PRESENCIA_Pin) == 0)
-	 		  {
-	 			  tim_count = 0;
-	 			  estadoActual = CERRANDO_PUERTA;
-	 		  }
+	HAL_GPIO_WritePin(GPIOA, LED_1_Pin, GPIO_PIN_SET); // abriendo puerta
+	HAL_GPIO_WritePin(GPIOA, LED_2_Pin, GPIO_PIN_RESET); // motor apagado
+        // cuenta es mayor a 3 segundos y no se detecta presencia
+	if (tim_count > TIEMPO_SIN_PRESENCIA && HAL_GPIO_ReadPin(GPIOA, SENSOR_PRESENCIA_Pin) == 0)
+	{
+            tim_count = 0;
+            estadoActual = CERRANDO_PUERTA;
+	}
        ...
 
 Segunda parte del video 
