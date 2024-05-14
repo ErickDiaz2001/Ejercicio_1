@@ -207,7 +207,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   {
 	  if(estadoActual == PUERTA_ABIERTA)
 	  {
-		  HAL_GPIO_TogglePin(GPIOC, LED_VERDE_Pin);
 		  tim_count ++;// incrementamos cada 1 segundo el tim_count
 	  }
   }
