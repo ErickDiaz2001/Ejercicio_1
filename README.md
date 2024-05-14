@@ -26,6 +26,8 @@ Cuando el FINAL DE CARRERA CERRADO se activa pasa al estado PUERTA CERRADA donde
 
 Resultados
 
+https://youtube.com/shorts/yCf_ukVzNoY?si=mznmGouvjFMN9USW
+
 Conclusiones
 
 La implementación de máquinas de estado para un sistema de control para una puerta corrediza automática con detección de presencia ofrece varias ventajas:
