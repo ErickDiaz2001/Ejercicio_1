@@ -26,9 +26,9 @@ Cuando el FINAL DE CARRERA CERRADO se activa pasa al estado PUERTA CERRADA donde
 
 Resultados
 
-https://youtube.com/shorts/yCf_ukVzNoY?si=mznmGouvjFMN9USW
-
 Primera parte del video
+
+https://youtube.com/shorts/cKPexKW1yVk?si=XvkoraK-XIeaVO_y
 
 El SENSOR no detecta presencia y pasaron los 3 segundos la puerta se cierra.
 
@@ -46,6 +46,8 @@ El SENSOR no detecta presencia y pasaron los 3 segundos la puerta se cierra.
 
 
 Segunda parte del video 
+
+https://youtube.com/shorts/8k4D7jngDjI?si=fku-lt9uY_piwCWb
 
 El SENSOR detecta presencia y no pasaron los 3 segundos la puerta permanece abierta.
 
